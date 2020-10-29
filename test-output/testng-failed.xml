@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="test1">
+    <packages>
+      <package name="com.mock.example.service.testngimpl.test1.*"/>
+    </packages>
+    <classes>
+      <class name="com.mock.example.service.testngimpl.test1.TestNgMysql"/>
+    </classes>
+  </test> <!-- test1 -->
+  <test name="test1(failed)">
+    <classes>
+      <class name="com.mock.example.service.testngimpl.test1.TestNgMysql">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="test1"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.mock.example.service.testngimpl.test1.TestNgMysql -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

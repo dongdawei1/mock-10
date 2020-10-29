@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mock.example.mappers.UserMapper">
+   <!--    public Employee getEmpById(Integer id);
+
+    public void insertEmp(Employee employee);
+    <select id="getEmpById" resultType="com.atguigu.springboot.bean.Employee">
+        SELECT * FROM employee WHERE id=#{id}
+    </select>-->
+
+    <select id="getall" resultType="java.util.Map">
+        select * from 
+        <if test="_parameter==1"> t_user    </if>
+         
+    </select>
+    
+ 
+    
+    <!--根据id查用户  -->    
+      <select id="selectUserById" resultType="com.mock.example.entity.User">
+        SELECT * FROM t_user WHERE id=#{id}
+    </select>
+    
+   
+</mapper>

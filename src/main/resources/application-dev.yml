@@ -1,0 +1,26 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    username: root
+    password:  
+    url: jdbc:mysql://127.0.0.1:3306/atcrowdfunding-v?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+ 
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.example.entity
+  
+#日志相关 
+logging:
+  config: 
+    classpath:logback-spring.xml 
+  level:
+    org:
+      mybatis: info
+      
+person:
+  id: 1
+  username: oioi
+  dsf: 4
+  de: 345
