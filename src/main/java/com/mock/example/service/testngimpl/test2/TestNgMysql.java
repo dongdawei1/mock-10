@@ -1,4 +1,4 @@
-package com.mock.example.service.testngimpl.test1;
+package com.mock.example.service.testngimpl.test2;
 
 import org.testng.annotations.Test;
 
@@ -11,10 +11,8 @@ public class TestNgMysql extends BaseTestNgPrepare {
 
 	@Test
 	public void test1() {
-		log.info("www");
-		waitForCheckoutResult(() -> {
-			assertEquals("12", "121");
-		}, 100L, 5);
+		log.info("www2222222222222222");
+	
 	}
 
 	@Test

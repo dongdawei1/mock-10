@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -143,13 +143,13 @@
                   </a> <!-- test1 -->
                   <span class="method-name">test1</span>
                   <div class="stack-trace">java.lang.RuntimeException: Timed out waiting for the codeBlock to not throw throwable!
-	at com.mock.constant.teseng.BaseTestNgPrepare.waitForCodeBlockToNotThrowThrowableAndReturnTrue(BaseTestNgPrepare.java:85)
-	at com.mock.constant.teseng.BaseTestNgPrepare.waitForCheckoutResult(BaseTestNgPrepare.java:47)
-	at com.mock.example.service.testngimpl.test1.TestNgMysql.test1(TestNgMysql.java:12)
+	at com.mock.constant.teseng.BaseTestNgPrepare.waitForCodeBlockToNotThrowThrowableAndReturnTrue(BaseTestNgPrepare.java:86)
+	at com.mock.constant.teseng.BaseTestNgPrepare.waitForCheckoutResult(BaseTestNgPrepare.java:48)
+	at com.mock.example.service.testngimpl.test1.TestNgMysql.test1(TestNgMysql.java:15)
 Caused by: java.lang.AssertionError: expected [121] but found [12]
-	at com.mock.example.service.testngimpl.test1.TestNgMysql.lambda$0(TestNgMysql.java:13)
-	at com.mock.constant.teseng.BaseTestNgPrepare.lambda$0(BaseTestNgPrepare.java:48)
-	at com.mock.constant.teseng.BaseTestNgPrepare.waitForCodeBlockToNotThrowThrowableAndReturnTrue(BaseTestNgPrepare.java:67)
+	at com.mock.example.service.testngimpl.test1.TestNgMysql.lambda$0(TestNgMysql.java:16)
+	at com.mock.constant.teseng.BaseTestNgPrepare.lambda$0(BaseTestNgPrepare.java:49)
+	at com.mock.constant.teseng.BaseTestNgPrepare.waitForCodeBlockToNotThrowThrowableAndReturnTrue(BaseTestNgPrepare.java:68)
 	... 26 more
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
@@ -190,6 +190,19 @@ Caused by: java.lang.AssertionError: expected [121] but found [12]
       &lt;class name=&quot;com.mock.example.service.testngimpl.test1.TestNgMysql&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test1 --&gt;
+  &lt;test name=&quot;test1(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mock.example.service.testngimpl.test1.TestNgMysql&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;afterClass&quot;/&gt;
+          &lt;include name=&quot;afterSuite&quot;/&gt;
+          &lt;include name=&quot;test1&quot;/&gt;
+          &lt;include name=&quot;beforeClass&quot;/&gt;
+          &lt;include name=&quot;beforeSuite&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.mock.example.service.testngimpl.test1.TestNgMysql --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test1(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,6 +215,9 @@ Caused by: java.lang.AssertionError: expected [121] but found [12]
             <ul>
               <li>
                 <span class="test-name">test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test1(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,16 +247,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'com.mock.example.service.testngimpl.test1.TestNgMysql')
-data.setCell(0, 3, 504);
+data.setCell(0, 3, 592);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testLambda')
 data.setCell(1, 2, 'com.mock.example.service.testngimpl.test1.TestNgMysql')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 9);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 507 ms</span>
+              <span class="suite-total-time">Total running time: 601 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -273,27 +289,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">36 ms</span>
+                <span class="method-start">68 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test1</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">76 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLambda</span>
-                <span class="method-start">557 ms</span>
+                <span class="method-start">719 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">562 ms</span>
+                <span class="method-start">733 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">621 ms</span>
+                <span class="method-start">857 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
