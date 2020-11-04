@@ -15,7 +15,7 @@ public class BaseTestNg extends Assert{
         log.info("======================================== beforeSuite ========================================");
     }
     
-    @AfterSuite
+   // @AfterSuite
     public void afterSuite() throws Exception {
       //在这里关闭连接吧
     	closeJdbcConnections();

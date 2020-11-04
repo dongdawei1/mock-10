@@ -13,10 +13,30 @@ public class TestNgMysql extends BaseTestNgPrepare {
 	public void test1() {
 		log.info("www");
 		waitForCheckoutResult(() -> {
-			assertEquals("12", "121");
+			assertEquals("121", "121");
 		}, 100L, 5);
 	}
 
+	
+	@Test
+	public void test2() {
+		
+			assertEquals("121", "121");
+		
+	}
+	
+	@Test
+	public void test3() {
+		
+			assertEquals("121", "121");
+		
+	}
+	@Test
+	public void test4() {
+		
+			assertEquals("120", "121");
+		
+	}
 	@Test
 	public static void testLambda() {
 		System.out.println(invokeCook((int a, int b) -> {
