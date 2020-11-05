@@ -19,6 +19,22 @@ public class TestNgMysql extends BaseTestNgPrepare {
 
 	
 	@Test
+	public void test11111() {
+		log.info("www");
+		waitForCheckoutResult(() -> {
+			assertEquals("1211", "121");
+		}, 100L, 5);
+	}
+	
+	@Test
+	public void test11112() {
+		log.info("www");
+		waitForCheckoutResult(() -> {
+			assertEquals("1211", "1201");
+		}, 100L, 5);
+	}
+	
+	@Test
 	public void test2() {
 		
 			assertEquals("121", "121");
