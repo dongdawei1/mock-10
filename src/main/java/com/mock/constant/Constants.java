@@ -14,6 +14,8 @@ public class Constants {
 
 	// testng 自动化使用那套环境，本地测试的数据库地址和服务地址
 	public static final String TESTNG__ENVIRONMENT = getProperty("env");
+	// testng func1是springboot 执行环境，执行结果落测试平台库
+	public static final String IS_FUNC1 = "func1";
 
 	private static void ________________________服务探活ServerSound________________________() {
 	}

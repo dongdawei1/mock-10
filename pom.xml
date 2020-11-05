@@ -156,11 +156,6 @@
 						<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
 						<suiteXmlFile>src/main/resources/testng1.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<!-- Setting ReportNG listeners <properties> <property> <name>listener</name> 
-						<value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter 
-						</value> </property> </properties> -->
-
-
 					<!-- ReportNG配置 -->
 					<properties>
 						<property>

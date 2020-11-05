@@ -1,12 +1,14 @@
 package com.mock.example.service.testngimpl.test2;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.mock.constant.teseng.BaseTestNgPrepare;
 import com.mock.utils.forcheck.forcheck.TestCount;
-
+import com.mock.constant.teseng.IHookableImp;
 import lombok.extern.slf4j.Slf4j;
 @Slf4j
+@Listeners(IHookableImp.class)
 public class TestNgMysql extends BaseTestNgPrepare {
 
 	@Test
