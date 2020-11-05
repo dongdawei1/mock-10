@@ -12,6 +12,12 @@
 
 	</test>
 	-->
+	
+	<!-- jia
+	<listeners>
+        <listener class-name="IReporterImp"/>
+    </listeners>-->
+	
 	<test name="test2">
 		<packages>
 			<package name="com.mock.example.service.testngimpl.test2.*" />

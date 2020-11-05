@@ -11,8 +11,8 @@ import com.mock.utils.forcheck.forcheck.TestCount;
 
 import lombok.extern.slf4j.Slf4j;
 @Slf4j
-@Listeners({TestListenerAdapterImp.class,IHookableImp.class,
-	IReporterImp.class} )
+//@Listeners({TestListenerAdapterImp.class,IHookableImp.class,
+//	IReporterImp.class} )
 public class TestNgMysql1 extends BaseTestNgPrepare {
 
 	@Test

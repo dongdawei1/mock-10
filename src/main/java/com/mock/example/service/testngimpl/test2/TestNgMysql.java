@@ -8,7 +8,7 @@ import com.mock.utils.forcheck.forcheck.TestCount;
 import com.mock.constant.teseng.IHookableImp;
 import lombok.extern.slf4j.Slf4j;
 @Slf4j
-@Listeners(IHookableImp.class)
+//@Listeners(IHookableImp.class )
 public class TestNgMysql extends BaseTestNgPrepare {
 
 	@Test
