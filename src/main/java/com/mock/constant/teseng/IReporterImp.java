@@ -1,7 +1,6 @@
 package com.mock.constant.teseng;
 
-import static com.mock.utils.forcheck.PropertiesUtil.getProperty;
-
+import static  com.mock.utils.forcheck.mysqlutils.SpringBootMysqlUtils.isPreservation;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -15,8 +14,7 @@ import org.testng.ITestResult;
 
 import org.testng.xml.XmlSuite;
 
-import static com.mock.constant.Constants.IS_FUNC1;
-import static com.mock.constant.Constants.TESTNG__ENVIRONMENT;
+
 
 public class IReporterImp implements IReporter {
 	/**
@@ -26,7 +24,7 @@ public class IReporterImp implements IReporter {
 	@Override
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> iSuites, String outputDirectory) {
 		// 只有springboot func1环境执行时才会去吧全部数据落库
-		if (!IS_FUNC1.equals(TESTNG__ENVIRONMENT)) {
+		if (!isPreservation()) {
 			return;
 		}
 

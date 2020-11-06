@@ -23,7 +23,7 @@ import javax.validation.constraints.NotEmpty;
 public class Person {
 	
 	public  long id;
-	@NotEmpty
+	//@NotEmpty  加上后为空会报错
 	public  String  usernam;
 	public  String  username;  //用户名
 }

@@ -1,7 +1,6 @@
 package com.mock.constant.teseng;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
 
 import org.testng.annotations.BeforeSuite;
 import static com.mock.utils.forcheck.mysqlutils.MysqlUtils.closeJdbcConnections;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"  preserve-order="true">
+    <!--preserve-order="true" 按照此顺序执行-->
+    <suite-files>
+        <suite-file path="testngsmoke.xml"/>
+        <suite-file path="testngtest2.xml"/>
+        <suite-file path="testngtest1.xml"/>
+    </suite-files>
+	
+</suite> <!-- Suite -->

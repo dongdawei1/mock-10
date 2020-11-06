@@ -1,56 +1,43 @@
 package com.mock.example.controller;
 
-import java.util.HashMap;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.mock.example.service.BunnerService;
-
+import com.mock.constant.reponse.ServerResponse;
+import com.mock.example.service.testngservice.RunTestNgService;
+import  com.mock.constant.Constants;
 
 
 
 //http://localhost:8083/bunner/getpguang   127
 
 /**
- * 
- * 
- * 
- * 
- * 
  * testNg   开始执行之前获取 数据库连接，运行spring  用mybatis
- * 
- * 
- * 
- * 
- * 
  * */
 
 
 
 @Controller
-@RequestMapping("bunner/")
-public class DibuBunnerController {
+@RequestMapping(Constants.AUTOMATIC+"runTest/")
+public class RunTestNgController {
 	//http://localhost:8080/bunner/getpguang   127
 	@Autowired
 	
-	BunnerService bunnerService;
+	RunTestNgService runTestNgService;
 	
-	@RequestMapping(value = "getpguang", method = RequestMethod.GET)
+	@RequestMapping(value = "runAll", method = RequestMethod.GET)
 	@ResponseBody
-	public String getpguang(HttpServletRequest httpServletRequest) {
+	public ServerResponse<String> runAll(HttpServletRequest httpServletRequest) {
 		
-        String appid= httpServletRequest.getHeader("appid");
-        System.out.println("DibuBunnerController.getpguang()"+appid);
+       // String appid= httpServletRequest.getHeader("appid");
+        //System.out.println("DibuBunnerController.getpguang()"+appid);
        // return ServerResponse.createBySuccess("aa");
-		return bunnerService.aupguangao(12);
+		return runTestNgService.runAll();
 
 	}
 }

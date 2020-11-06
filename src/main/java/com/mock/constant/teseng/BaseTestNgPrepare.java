@@ -18,23 +18,7 @@ public class BaseTestNgPrepare extends BaseTestNg {
 				this.getClass().getSimpleName());
 	}
 
-//
-//  @BeforeMethod
-//  public void beforeMethod(Method testMethod) throws Exception {
-//
-//  	log.info(format("======================================== beforeMethod of ========================================"));
-//
-//   
-//
-//      // LOGGER.info(format("======================================== test: [%s] ========================================", testMethod.getName()));
-//
-//  }
-//
-//  @AfterMethod
-//  public void afterMethod() throws Exception {
-//  	log.info(format("======================================== afterMethod of  ========================================"));
-//  }
-//
+
 	@AfterClass
 	public void afterClass() throws Exception {
 		log.info("======================================== afterClass: [{}] ========================================",
@@ -56,9 +40,6 @@ public class BaseTestNgPrepare extends BaseTestNg {
 	 */
 	public static void waitForCodeBlockToNotThrowThrowableAndReturnTrue(Callable<Boolean> booleanCallable, Long sleep,
 			int maxRounds) {
-
-		// LOGGER.info("==============waitForCodeBlockToNotThrowThrowableAndReturnTrue==============");
-
 		int round = 1;
 		while (true) {
 //          LOGGER.info("========Round [{}]========", round);

@@ -1,4 +1,4 @@
-package com.mock.example.service.testngimpl.test2;
+package com.mock.example.service.testngservice.impl.test2;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

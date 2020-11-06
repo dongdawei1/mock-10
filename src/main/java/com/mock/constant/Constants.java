@@ -9,6 +9,9 @@ public class Constants {
 	//TestNg执行时获取配置文件中的int值报错或者null返回
 	public static final int PROPERTY_INT_NULL_RETURN =-999999999;
 	
+	public static final String AUTOMATIC ="/api/v1/automatic/";
+	
+	
 	private static void ________________________sql________________________() {
 	}
 

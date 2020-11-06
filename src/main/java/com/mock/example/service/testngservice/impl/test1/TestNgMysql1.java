@@ -1,18 +1,9 @@
-package com.mock.example.service.testngimpl.test1;
-import com.mock.constant.teseng.TestListenerAdapterImp;
-
-import org.testng.annotations.Listeners;
+package com.mock.example.service.testngservice.impl.test1;
 import org.testng.annotations.Test;
-
 import com.mock.constant.teseng.BaseTestNgPrepare;
-import com.mock.constant.teseng.IHookableImp;
-import com.mock.constant.teseng.IReporterImp;
 import com.mock.utils.forcheck.forcheck.TestCount;
-
 import lombok.extern.slf4j.Slf4j;
 @Slf4j
-//@Listeners({TestListenerAdapterImp.class,IHookableImp.class,
-//	IReporterImp.class} )
 public class TestNgMysql1 extends BaseTestNgPrepare {
 
 	@Test
