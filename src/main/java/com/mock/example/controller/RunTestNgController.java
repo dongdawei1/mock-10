@@ -26,8 +26,7 @@ import  com.mock.constant.Constants;
 @RequestMapping(Constants.AUTOMATIC+"runTest/")
 public class RunTestNgController {
 	//http://localhost:8080/bunner/getpguang   127
-	@Autowired
-	
+	@Autowired	
 	RunTestNgService runTestNgService;
 	
 	@RequestMapping(value = "runAll", method = RequestMethod.GET)

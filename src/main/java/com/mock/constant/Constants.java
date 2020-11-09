@@ -11,6 +11,7 @@ public class Constants {
 	
 	public static final String AUTOMATIC ="/api/v1/automatic/";
 	
+	public  String springBoot_runtestng_no =null;
 	
 	private static void ________________________sql________________________() {
 	}

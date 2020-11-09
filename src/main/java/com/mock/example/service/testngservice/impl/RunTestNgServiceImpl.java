@@ -1,6 +1,8 @@
 package com.mock.example.service.testngservice.impl;
 
 import org.testng.annotations.Test;
+
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -25,7 +27,7 @@ public class RunTestNgServiceImpl implements RunTestNgService {
 	@Autowired
 	Person pe;
 
-	
+	public String id;
 	
 
 	@Override
@@ -33,7 +35,9 @@ public class RunTestNgServiceImpl implements RunTestNgService {
 		log.info("ma :{} ", pe);
 //	log.info("ma :{} ",Person.username);
         
-		new Smoke().runAll();
+		id=new Date().toString();
+		
+		new Smoke().runAll(id);
 
 		log.info("ma :{} ", "dd");
 		log.info("ma :{} ", "dd");
