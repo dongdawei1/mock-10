@@ -1,12 +1,7 @@
 package com.mock.example.service.testngservice.impl;
 
-import org.testng.annotations.Test;
-
 import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
-import org.apache.ibatis.javassist.expr.NewArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,22 +22,19 @@ public class RunTestNgServiceImpl implements RunTestNgService {
 	@Autowired
 	Person pe;
 
-	public String id;
-	
+	public String batchId;
 
 	@Override
 	public synchronized ServerResponse<String> runAll() {
-		log.info("ma :{} ", pe);
-//	log.info("ma :{} ",Person.username);
-        
-		id=new Date().toString();
-		
-		new Smoke().runAll(id);
+		try {
+			batchId = new Date().toString();
+			Smoke.runAll(batchId);
+			//所有测试类的都加runAll()方法
+			return ServerResponse.createBySuccessMessage("SUCCESS: "+"执行成功，执行结果请去详情页查看");			
+		} catch (Exception e) {
+			return ServerResponse.createByErrorMessage("FAIL: "+"执行失败，请联系自动化维护人员");
+		}
 
-		log.info("ma :{} ", "dd");
-		log.info("ma :{} ", "dd");
-		log.info("ma :{} ", "dd");
-		return null;
 	}
 
 	@Override

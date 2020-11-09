@@ -2,13 +2,10 @@ package com.mock.constant.teseng;
 
 import java.util.concurrent.Callable;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import com.mock.example.service.testngservice.RunTestNgService;
-import com.mock.example.service.testngservice.impl.RunTestNgServiceImpl;
 import com.mock.utils.forcheck.forcheck.RunnableSupportingThrowingException;
 
 import lombok.extern.slf4j.Slf4j;
@@ -38,11 +35,13 @@ public class BaseTestNgPrepare extends BaseTestNg {
 	}
 
 	/**
-	 * 是否保存数据
+	 * springBoot手动或者定时任务执行，根据入参Boolean isPreservation判断是否落库（true落库） 
+	 * Boolean isSmoke  判断失败后是否终止执行case （一般smoke执行失败终止 true 终止），
+	 * id为落库的 同一批的 id 般 是日期 +时间
 	 */
 	public static void waitForCheckoutResultToPreservation(
 			RunnableSupportingThrowingException runnableSupportingThrowingException, String name,
-			Boolean isPreservation, Boolean isSmoke,String id) {
+			Boolean isPreservation, Boolean isSmoke,String batchId) {
 
 		try {
 			waitForCodeBlockToNotThrowThrowableAndReturnTrue(() -> {
@@ -52,13 +51,13 @@ public class BaseTestNgPrepare extends BaseTestNg {
 
 			// 落库
 			if (isPreservation) {
-				isPreservation(name, isSmoke,id);
+				isPreservation(name, isSmoke,batchId);
 			}
 
 		} catch (Exception e) {
 			// 落库
 			if (isPreservation) {
-				isPreservation(name, isSmoke,id);
+				isPreservation(name, isSmoke,batchId);
 			}
 
 			// 判断是否是冒烟，冒烟测试停止

@@ -1,16 +1,9 @@
 package com.mock.example.service.testngservice.impl.smoke;
 
-import static com.mock.utils.forcheck.mysqlutils.SpringBootMysqlUtils.isPreservation;
-
-import org.testng.SkipException;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import com.mock.constant.teseng.BaseTestNgPrepare;
 import com.mock.constant.teseng.TestListenerAdapterImp;
-import com.mock.utils.forcheck.forcheck.TestCount;
-
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -99,36 +92,34 @@ public class Smoke extends BaseTestNgPrepare {
 
 	}
 
-	public static void runAll( String id) {
+	public static void runAll( String batchId) {
 		
 		waitForCheckoutResultToPreservation(() -> {
 			test1Smoke();
 
-		}, "test1Smoke", true, true,id);
+		}, "test1Smoke", true, true,batchId);
 
 		waitForCheckoutResultToPreservation(() -> {
 			test1Smoke();
 
-		}, "test1Smoke", true, true,id);
+		}, "test1Smoke", true, true,batchId);
 
 		
 		waitForCheckoutResultToPreservation(() -> {
 			test1Smoke1123();
 
-		}, "test1Smoke1123", true, false,id);
+		}, "test1Smoke1123", true, false,batchId);
 
 		waitForCheckoutResultToPreservation(() -> {
 			test4_TestNgMysql1Smok();
 
-		}, "test1Smoke1123", true, false,id);
+		}, "test1Smoke1123", true, false,batchId);
 		waitForCheckoutResultToPreservation(() -> {
 			test4_TestNgMysql1Smoke();
 
-		}, "test1Smoke1123", true, false,id);
+		}, "test1Smoke1123", true, false,batchId);
 		
-		//test3_TestNgMysql1Smoke();
-		//test1Smoke12();
-		// test1Smoke122();
+	
 
 	}
 
