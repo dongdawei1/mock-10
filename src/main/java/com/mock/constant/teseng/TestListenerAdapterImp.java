@@ -6,7 +6,7 @@ import org.testng.TestListenerAdapter;
 
 import lombok.extern.slf4j.Slf4j;
 
-import static com.mock.utils.forcheck.mysqlutils.SpringBootMysqlUtils.isPreservation;
+import static com.mock.utils.mysqlutils.SpringBootMysqlUtils.isPreservation;
 @Slf4j
 public class TestListenerAdapterImp extends TestListenerAdapter {
 	/**

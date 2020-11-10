@@ -14,7 +14,7 @@ import  com.mock.constant.Constants;
 
 
 
-//http://localhost:8083/bunner/getpguang   127
+//http://localhost:8083/api/v1/automatic/runTest/runAll
 
 /**
  * testNg   开始执行之前获取 数据库连接，运行spring  用mybatis

@@ -1,6 +1,6 @@
 package com.mock.constant;
 
-import static com.mock.utils.forcheck.PropertiesUtil.getProperty;
+import static com.mock.utils.PropertiesUtil.getProperty;
 
 
 public class Constants {

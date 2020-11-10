@@ -1,9 +1,8 @@
-package com.mock.utils.forcheck.sshutils;
+package com.mock.utils.sshutils;
 
-import static com.mock.utils.forcheck.PropertiesUtil.getProperty;
-
-import static com.mock.utils.forcheck.PropertiesUtil.getPropertyInt;
 import static com.mock.constant.Constants.SOUND_SERVICE_NAME;
+import static com.mock.utils.PropertiesUtil.getProperty;
+import static com.mock.utils.PropertiesUtil.getPropertyInt;
 import static com.mock.constant.Constants.SOUND_SERVICE_FUNC;
 import static com.mock.constant.Constants.PROPERTY_INT_NULL_RETURN;
 

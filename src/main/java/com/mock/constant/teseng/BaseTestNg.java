@@ -3,8 +3,8 @@ package com.mock.constant.teseng;
 import org.testng.Assert;
 
 import org.testng.annotations.BeforeSuite;
-import static com.mock.utils.forcheck.mysqlutils.MysqlUtils.closeJdbcConnections;
-import static com.mock.utils.forcheck.mysqlutils.MysqlUtils.closeJdbcStatements;
+import static com.mock.utils.mysqlutils.MysqlUtils.closeJdbcConnections;
+import static com.mock.utils.mysqlutils.MysqlUtils.closeJdbcStatements;
 import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BaseTestNg extends Assert{

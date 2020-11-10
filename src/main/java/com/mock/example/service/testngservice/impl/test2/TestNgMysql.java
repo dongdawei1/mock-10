@@ -4,7 +4,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.mock.constant.teseng.BaseTestNgPrepare;
-import com.mock.utils.forcheck.forcheck.TestCount;
+import com.mock.utils.forcheck.TestCount;
 import com.mock.constant.teseng.IHookableImp;
 import lombok.extern.slf4j.Slf4j;
 @Slf4j

@@ -1,4 +1,4 @@
-package com.mock.utils.forcheck.mysqlutils;
+package com.mock.utils.mysqlutils;
 
 import static com.mock.constant.Constants.IS_FUNC1;
 import static com.mock.constant.Constants.TESTNG__ENVIRONMENT;

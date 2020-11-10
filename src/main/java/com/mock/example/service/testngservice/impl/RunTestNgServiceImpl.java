@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.testng.annotations.Test;
 
 import com.mock.constant.reponse.ServerResponse;
 import com.mock.example.entity.Person;
@@ -11,6 +12,7 @@ import com.mock.example.mappers.UserMapper;
 import com.mock.example.service.testngservice.RunTestNgService;
 import com.mock.example.service.testngservice.impl.smoke.Smoke;
 
+import bsh.This;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -34,7 +36,6 @@ public class RunTestNgServiceImpl implements RunTestNgService {
 		} catch (Exception e) {
 			return ServerResponse.createByErrorMessage("FAIL: "+"执行失败，请联系自动化维护人员");
 		}
-
 	}
 
 	@Override
@@ -43,4 +44,7 @@ public class RunTestNgServiceImpl implements RunTestNgService {
 		return null;
 	}
 
+	
+
+	
 }

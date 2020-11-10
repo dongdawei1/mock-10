@@ -1,4 +1,4 @@
-package com.mock.utils.forcheck;
+package com.mock.utils;
 
 import com.mock.constant.reponse.ResponseCode;
 import com.mock.constant.reponse.ServerResponse;

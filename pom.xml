@@ -131,6 +131,14 @@
 		</dependency>
 		<!-- 依赖velocity ReportNG ReportNG本身又有对velocity和guice这两个东西有依赖 结束 -->
 
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.6</version>
+		</dependency>
+
 	</dependencies>
 
 

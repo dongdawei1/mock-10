@@ -6,12 +6,13 @@ import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import com.mock.utils.forcheck.forcheck.RunnableSupportingThrowingException;
+import com.mock.utils.forcheck.RunnableSupportingThrowingException;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class BaseTestNgPrepare extends BaseTestNg {
+	
 	@BeforeClass
 	public void beforeClass() {
 		log.info("======================================== beforeClass {} ========================================",

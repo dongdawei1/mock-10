@@ -13,6 +13,13 @@ import lombok.extern.slf4j.Slf4j;
  * 2、如果是SpringBoot定时任务或者前端触发 ，只需正常写case，然后加到runAll 方法中，waitForCheckoutResultToPreservation方法会根据入参判断是否中断执行case或者落库
  */
 public class Smoke extends BaseTestNgPrepare {
+	
+
+	
+
+
+	
+	
 	@Test
 	public static void test1Smoke() {
 		log.info("www2222222222222222222222222222222222222222222222222");

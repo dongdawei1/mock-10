@@ -1,6 +1,6 @@
 package com.mock.constant.teseng;
 
-import static  com.mock.utils.forcheck.mysqlutils.SpringBootMysqlUtils.isPreservation;
+import static  com.mock.utils.mysqlutils.SpringBootMysqlUtils.isPreservation;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;

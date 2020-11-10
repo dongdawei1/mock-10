@@ -1,10 +1,12 @@
-package com.mock.utils.forcheck.sshutils;
+package com.mock.utils.sshutils;
 
-import static com.mock.utils.forcheck.PropertiesUtil.getProperty;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static com.mock.utils.PropertiesUtil.getProperty;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import ch.ethz.ssh2.Connection;

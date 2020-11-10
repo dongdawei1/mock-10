@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.mock.constant.reponse.ServerResponse;
 import com.mock.example.service.testngservice.RunTestNgService;
-import com.mock.utils.forcheck.LogUtil;
+import com.mock.utils.LogUtil;
 
 
 @Component

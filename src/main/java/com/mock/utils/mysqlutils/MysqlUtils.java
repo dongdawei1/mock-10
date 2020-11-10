@@ -1,7 +1,7 @@
-package com.mock.utils.forcheck.mysqlutils;
+package com.mock.utils.mysqlutils;
 
-import static com.mock.utils.forcheck.PropertiesUtil.getProperty;
 import static com.mock.constant.Constants.TESTNG__ENVIRONMENT;
+import static com.mock.utils.PropertiesUtil.getProperty;
 import static java.lang.String.format;
 import static java.lang.System.gc;
 import static java.util.Arrays.asList;

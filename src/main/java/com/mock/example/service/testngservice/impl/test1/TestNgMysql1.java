@@ -1,7 +1,7 @@
 package com.mock.example.service.testngservice.impl.test1;
 import org.testng.annotations.Test;
 import com.mock.constant.teseng.BaseTestNgPrepare;
-import com.mock.utils.forcheck.forcheck.TestCount;
+import com.mock.utils.forcheck.TestCount;
 import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class TestNgMysql1 extends BaseTestNgPrepare {
