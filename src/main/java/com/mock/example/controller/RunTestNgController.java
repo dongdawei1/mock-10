@@ -1,6 +1,8 @@
 package com.mock.example.controller;
 
 
+import java.math.BigDecimal;
+
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,5 +40,14 @@ public class RunTestNgController {
        // return ServerResponse.createBySuccess("aa");
 		return runTestNgService.runAll();
 
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		String sjiachun = "1.020436E8"; 
+		BigDecimal db = new BigDecimal(sjiachun); 
+		String ii = db.toPlainString(); 
+		System.out.println(ii);
 	}
 }

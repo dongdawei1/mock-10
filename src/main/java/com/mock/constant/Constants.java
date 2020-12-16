@@ -3,16 +3,27 @@ package com.mock.constant;
 import static com.mock.utils.PropertiesUtil.getProperty;
 
 
+import static com.mock.utils.ymlutils.YmlUtil.getYml;
 public class Constants {
 	private static void ________________________杂项sundry________________________() {
 	}
-	//TestNg执行时获取配置文件中的int值报错或者null返回
-	public static final int PROPERTY_INT_NULL_RETURN =-999999999;
-	
-	public static final String AUTOMATIC ="/api/v1/automatic/";
-	
-	public  String springBoot_runtestng_no =null;
-	
+
+	// TestNg执行时获取配置文件中的int值报错或者null返回
+	public static final int PROPERTY_INT_NULL_RETURN = -999999999;
+
+	public static final String AUTOMATIC = "/api/v1/automatic/";
+
+
+
+	private static void ________________________git________________________() {
+	}
+	// git下来的文件临时存放地址
+	public static final String TEMPORARY_PATH = System.getProperty("user.dir") + "/temporary/";
+	public static final String REMOTEPATH = getYml("git.remotePath");
+	public static final String GITUSERNAME = getYml("git.gitusername");
+	public static final String GITPASSWORD = getYml("git.gitpassword");
+	public static final String GITBRANCH = getYml("git.gitbranch");
+
 	private static void ________________________sql________________________() {
 	}
 
@@ -23,9 +34,10 @@ public class Constants {
 
 	private static void ________________________服务探活ServerSound________________________() {
 	}
-	//  服务名称list
+
+	// 服务名称list
 	public static final String[] SOUND_SERVICE_NAME = getListString(getProperty("ServerSound.service_name"), ",");
-    //  服务环境list
+	// 服务环境list
 	public static final String[] SOUND_SERVICE_FUNC = getListString(getProperty("ServerSound.func"), ",");
 
 	/**

@@ -19,7 +19,7 @@ import static com.mock.constant.Constants.PROPERTY_INT_NULL_RETURN;
 @Slf4j
 public class PropertiesUtil {
 
-	// 配置redis 基本信息
+	
 	private static Properties props;
 
 	static {

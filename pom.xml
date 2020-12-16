@@ -30,6 +30,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+			<dependency>
+		       <groupId>net.contargo</groupId>
+                <artifactId>big-decimal-validator</artifactId>
+              <version>1.3.0</version>
+	</dependency>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
@@ -138,7 +143,37 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.5.6</version>
 		</dependency>
+		<!-- git相关操作 -->
+		<dependency>
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+			<version>5.3.0.201903130848-r</version>
+		</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit.archive -->
+<dependency>
+    <groupId>org.eclipse.jgit</groupId>
+    <artifactId>org.eclipse.jgit.archive</artifactId>
+    <version>5.3.0.201903130848-r</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
+<dependency>
+    <groupId>com.jcraft</groupId>
+    <artifactId>jsch</artifactId>
+    <version>0.1.54</version>
+</dependency>
 
+		<!-- 读写文件相关 -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<!-- testNg读取yml依赖 -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.26</version>
+		</dependency>
 	</dependencies>
 
 
@@ -163,9 +198,9 @@
 						<!-- testNg 配置文件位置 -->
 						<suiteXmlFile>src/main/resources/testngmaventest.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<!-- testNg 串行执行case 未测试-->
+					<!-- testNg 串行执行case 未测试 -->
 					<forkCount>1</forkCount>
-                    <reuseForks>false</reuseForks>
+					<reuseForks>false</reuseForks>
 					<!-- ReportNG配置 -->
 					<properties>
 						<property>

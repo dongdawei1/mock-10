@@ -24,3 +24,9 @@ person:
   username: oioi
   dsf: 4
   de: 345
+
+git:
+  remotePath: https://github.com/dongdawei1/mock-10.git
+  gitusername: dong
+  gitpassword: dong
+  gitbranch: master
